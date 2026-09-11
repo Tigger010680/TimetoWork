@@ -1,17 +1,19 @@
-PROJEKT-STATUS "TimetoWork" - STAND: SITZUNG 1
+PROJEKT-STATUS "TimetoWork" - STAND: SITZUNG 4
 ==================================================
 KONTEXT: 
 Entwicklung einer mobilen Web-App zur Zeiterfassung und Baustellendokumentation im Handwerk. 
-Technologie: PHP (Plain), CSS, JSON-Dateisystem (kein SQL).
-Einsatzbereich: Zuerst Solo-Entwickler-Testbetrieb, später Kollegen und Büro-Admin.
+Technologie: PHP (Plain), CSS (Modular ausgelagert), JSON-Dateisystem (kein SQL).
+Besonderheit: Einbindung in ein CMS (isoliertes Layout). Zeichensatz-Fehler werden durch HTML-Entitäten umgangen.
 Hosting: Lokal / Ugreen NAS.
 
 REPOSITORY-STRUKTUR:
-- /data   -> Speichert die JSON-Daten (Mitarbeiter, Benutzer, Firma, Baustellen). Wird nicht aktiv im Code bearbeitet.
-- /script -> Hier liegen alle PHP- und CSS-Programme.
+- /data   -> Unterordner: mitarbeiter, benutzer, firma, baustellen (alle kleingeschrieben).
+- /script -> Ordnerstrukturen: layout/css/style.css und index.php.
 
 AKTUELLES ERGEBNIS:
-1. config.php ist im Ordner /script erstellt. Sie definiert die Pfade relativ zu /data und erstellt Ordnerstrukturen automatisch.
+1. config.php: Pfadverwaltung relativ zu /data (Berechtigungs-optimiert).
+2. /script/layout/css/style.css: Das komplette Design wurde sauber in eine eigene CSS-Datei ausgelagert.
+3. index.php: HTML/PHP-Struktur ist nun frei von Inline-Styles und bindet das Stylesheet sauber ein. Alle Darstellungen im CMS sind fehlerfrei und schick.
 
 NÄCHSTER SCHRITT:
-Entwicklung der Baustellen-Stammdatenverwaltung (Anlegen und Auslesen einer JSON-Struktur mit Baustellen-Nummer, Auftraggeber, Kabelart, Kontakten und Beschreibung) innerhalb des /script-Ordners.
+Entwicklung der Baustellen-Stammdatenverwaltung im Ordner /script (Erstellen einer baustellen.php zum Einlesen, Speichern und Auflisten der echten JSON-Dateien aus /data/baustellen/).
