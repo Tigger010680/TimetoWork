@@ -1,0 +1,17 @@
+PROJEKT-STATUS "TimetoWork" - STAND: SITZUNG 1
+==================================================
+KONTEXT: 
+Entwicklung einer mobilen Web-App zur Zeiterfassung und Baustellendokumentation im Handwerk. 
+Technologie: PHP (Plain), CSS, JSON-Dateisystem (kein SQL).
+Einsatzbereich: Zuerst Solo-Entwickler-Testbetrieb, später Kollegen und Büro-Admin.
+Hosting: Lokal / Ugreen NAS.
+
+REPOSITORY-STRUKTUR:
+- /data   -> Speichert die JSON-Daten (Mitarbeiter, Benutzer, Firma, Baustellen). Wird nicht aktiv im Code bearbeitet.
+- /script -> Hier liegen alle PHP- und CSS-Programme.
+
+AKTUELLES ERGEBNIS:
+1. config.php ist im Ordner /script erstellt. Sie definiert die Pfade relativ zu /data und erstellt Ordnerstrukturen automatisch.
+
+NÄCHSTER SCHRITT:
+Entwicklung der Baustellen-Stammdatenverwaltung (Anlegen und Auslesen einer JSON-Struktur mit Baustellen-Nummer, Auftraggeber, Kabelart, Kontakten und Beschreibung) innerhalb des /script-Ordners.
