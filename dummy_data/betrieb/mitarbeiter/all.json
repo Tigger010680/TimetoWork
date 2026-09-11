@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Müller",
+        "vorname": "Max",
+        "personalnummer": "P10001",
+        "firmenangehoerigkeit": {
+            "beginn": "2015-03-01",
+            "rente": "2045-08-31",
+            "gekuendigt": false,
+            "ende": null
+        }
+    },
+    {
+        "name": "Schmidt",
+        "vorname": "Anna",
+        "personalnummer": "P10002",
+        "firmenangehoerigkeit": {
+            "beginn": "2018-06-15",
+            "rente": "2052-11-30",
+            "gekuendigt": true,
+            "ende": "2024-02-29"
+        }
+    },
+    {
+        "name": "Fischer",
+        "vorname": "Lucas",
+        "personalnummer": "P10003",
+        "firmenangehoerigkeit": {
+            "beginn": "2020-01-01",
+            "rente": "2058-04-30",
+            "gekuendigt": false,
+            "ende": null
+        }
+    },
+    {
+        "name": "Weber",
+        "vorname": "Sabine",
+        "personalnummer": "P10004",
+        "firmenangehoerigkeit": {
+            "beginn": "2010-09-01",
+            "rente": "2038-12-31",
+            "gekuendigt": false,
+            "ende": "2025-07-31"
+        }
+    },
+    {
+        "name": "Meyer",
+        "vorname": "Jan",
+        "personalnummer": "P10005",
+        "firmenangehoerigkeit": {
+            "beginn": "2022-11-01",
+            "rente": "2061-07-31",
+            "gekuendigt": true,
+            "ende": "2023-05-31"
+        }
+    }
+]
